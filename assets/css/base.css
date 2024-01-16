@@ -1,0 +1,19 @@
+/*=============== BASE ===============*/
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--darker-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size); 
+  font-weight: var(--font-regular);
+}
+
+@media screen and (max-width: 991.98px) {
+  body.lock {
+    overflow: hidden;
+  }
+}

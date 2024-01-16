@@ -1,0 +1,72 @@
+/*=============== REUSABLE CSS CLASSES ===============*/
+.wrapper {
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  padding-inline: 0.625rem;
+}
+
+.grid {
+  display: grid;
+}
+
+
+.main {
+  flex: 1 1 auto;
+  overflow: hidden;
+  margin-block: var(--header-height) 9.375rem;
+}
+
+.title {
+  font-weight: var(--font-bold);
+  line-height: 1.25;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  border-radius: 2px;
+  color: var(--white-color);
+  font-size: var(--bigger-font-size);
+  font-weight: var(--font-medium);
+  padding: 0.5625rem 1.25rem;
+  text-align: center;
+  display: inline-block;
+}
+
+.section-small-title {
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 55.5rem;
+    padding: 0 0.9375rem;
+    margin: 0 auto;
+  }
+
+  .main {
+    margin-bottom: 5.125rem;
+  }
+
+  .title {
+    
+  }
+
+  .section-small-title {
+    font-size: 1.375rem;
+    line-height: normal;
+  }
+
+  .btn {
+    transition: background-color .4s;
+  }
+
+  .btn:hover {
+    background-color: var(--dark-color);
+  }
+}

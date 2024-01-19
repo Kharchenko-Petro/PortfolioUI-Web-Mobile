@@ -18,7 +18,7 @@
 .main {
   flex: 1 1 auto;
   overflow: hidden;
-  margin-block: var(--header-height) 9.375rem;
+  margin-top: var(--header-height);
 }
 
 .title {
@@ -49,17 +49,13 @@
     margin: 0 auto;
   }
 
-  .main {
-    margin-bottom: 5.125rem;
-  }
-
   .title {
     
   }
 
   .section-small-title {
     font-size: 1.375rem;
-    line-height: normal;
+    text-align: start;
   }
 
   .btn {

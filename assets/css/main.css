@@ -49,6 +49,7 @@
     /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
     --h1-font-size: 2.75rem;
+    --h2-font-size: 1.875rem;
     --h3-font-size: 1.625rem;
   }
 }
@@ -302,45 +303,45 @@
 .posts__container {
 }
 .posts__header {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 .posts__view-all {
   display: none;
+  white-space: nowrap;
 }
 .posts__body {
 }
 .posts__card {
   margin: 0 0 1.0625rem 0;
 }
-.card-posts {
+.card-post {
   background-color: var(--white-color);
   border-radius: 0.25rem;
+  box-shadow: 0px 4px 10px 0px rgba(187, 225, 250, 0.25);
   padding: 0.75rem 1.25rem 1.375rem;
   transition: background-color 0.4s;
 }
-.card-posts__link > *:last-child {
+.card-post__link > *:last-child {
   margin-bottom: 0;
 }
-.card-posts__title {
+.card-post__title {
   font-size: var(--h3-font-size);
   font-weight: var(--font-bold);
   line-height: 1.36;
   margin-bottom: 0.75rem;
 }
-.card-posts__info {
+.card-post__info {
   display: flex;
   margin-bottom: 1.1875rem;
 }
-.card-posts__data:not(:last-child) {
+.card-post__data:not(:last-child) {
   margin-right: 1.5rem;
 }
-.card-posts__tags {
+.card-post__tags:not(:first-child) {
   border-left: solid 1px var(--black-color);
-}
-.card-posts__tags:not(:first-child) {
   padding-left: 1.5rem;
 }
-.card-posts__description {
+.card-post__description {
 }
 @media screen and (min-width: 992px) {
   .posts {
@@ -349,10 +350,14 @@
   .posts__header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
+  }
+  .posts__title {
+    padding-right: 20px;
   }
   .posts__view-all {
     display: block;
+    white-space: nowrap;
   }
   .posts__view-all:hover {
     color: var(--secondary-color);
@@ -361,28 +366,138 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1.25rem;
+    justify-content: space-between;
   }
   .posts__card {
     margin: 0;
   }
-  .card-posts {
-    flex: 0 0 26.125rem;
+  .card-post {
+    flex: 0 0 48.7%;
     padding: 1.5rem 1.4375rem 1.75rem;
   }
-  .card-posts:hover {
+  .card-post:hover {
     background-color: var(--grey-color);
   }
-  .card-posts__title {
+  .card-post__title {
     margin-bottom: 1.625rem;
   }
-  .card-posts__info {
+  .card-post__info {
     font-size: 1.125rem;
     margin-bottom: 1rem;
   }
-  .card-posts__data:not(:last-child) {
+  .card-post__data:not(:last-child) {
     margin-right: 1.875rem;
   }
-  .card-posts__tags:not(:first-child) {
+  .card-post__tags:not(:first-child) {
     padding-left: 1.6875rem;
+  }
+}
+/*=============== WORKS ===============*/
+.featured-works {
+  padding-block: 1.25rem 9.375rem;
+}
+.featured-works__container {
+  padding-inline: 1.125rem;
+}
+.featured-works__title:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.works {
+}
+.works__items {
+}
+.works__item {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--grey-color);
+}
+.works__item:not(:first-child) {
+  display: none;
+}
+.work {
+}
+.work__image-container:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.work__image {
+}
+.work__content > *:last-child {
+  margin-bottom: 0;
+}
+.work__title {
+  font-size: var(--h2-font-size);
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+.work__info {
+  display: flex;
+  gap: 1.375rem;
+  margin-bottom: 1.5rem;
+}
+.work__year {
+  background-color: var(--darker-color);
+  border-radius: 1rem;
+  color: var(--white-color);
+  font-weight: 900;
+  padding: 0.125rem 0.75rem;
+}
+.work__category {
+  color: var(--light-color);
+}
+.work__description {
+}
+@media screen and (min-width: 992px) {
+  .featured-works {
+      padding-block: 28px 86px;
+  }
+  .featured-works__container {
+    padding: 0 15px;
+  }
+  .featured-works__title:not(:last-child) {
+    margin-bottom: 2.125rem;
+  }
+  .works {
+  }
+  .works__items {
+  }
+  .works__item {
+    padding-bottom: 2rem;
+  }
+  .works__item:not(:first-child) {
+    display: flex;
+  }
+  .works__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .work {
+    display: flex;
+    gap: 18px;
+  }
+  .work__image-container {
+    flex: 0 0 28.672%;
+    height: 73.17%;
+  }
+  .work__image-container:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .work__image {
+    height: 100%;
+    width: 100%;
+  }
+  .work__content {
+
+  }
+  .work__title {
+  }
+  .work__info {
+    gap: 1.625rem;
+  }
+  .work__year {
+    font-size: 1.125rem;
+  }
+  .work__category {
+    font-size: 20px;
+  }
+  .work__description {
   }
 }

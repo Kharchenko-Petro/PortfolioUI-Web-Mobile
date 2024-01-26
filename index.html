@@ -44,7 +44,6 @@
           <div class="hero__container container">
             <div class="hero__profile-picture">
               <img
-                class="hero__img"
                 src="./assets/img/home/main/hero/profile-picture.png"
                 alt="Profile picture"
               />
@@ -64,25 +63,25 @@
           </div>
         </section>
 
-        <section class="posts">
-          <div class="posts__container container">
-            <div class="posts__header">
-              <div class="posts__title section-small-title">Recent posts</div>
-              <a href="" class="posts__view-all">View all</a>
+        <section class="recent-posts">
+          <div class="recent-posts__container container">
+            <div class="recent-posts__header">
+              <div class="recent-posts__title section-small-title">Recent posts</div>
+              <a href="#" class="recent-posts__view-all">View all</a>
             </div>
 
-            <div class="posts__body">
-              <ul class="posts__cards">
-                <li class="posts__card card-post">
-                  <a href="#" class="card-post__link">
-                    <h3 class="card-post__title">
+            <div class="recent-posts__body">
+              <ul class="recent-posts__items posts">
+                <li class="posts__item post">
+                  <a href="#" class="post__link">
+                    <h3 class="post__title">
                       Making a design system from scratch
                     </h3>
-                    <div class="card-post__info">
-                      <div class="card-post__data">12 Feb 2020</div>
-                      <div class="card-post__tags">Design, Pattern</div>
+                    <div class="post__info">
+                      <div class="post__data">12 Feb 2020</div>
+                      <div class="post__tags">Design, Pattern</div>
                     </div>
-                    <div class="card-post__description">
+                    <div class="post__description">
                       <p>
                         Amet minim mollit non deserunt ullamco est sit aliqua
                         dolor do amet sint. Velit officia consequat duis enim
@@ -93,16 +92,16 @@
                   </a>
                 </li>
 
-                <li class="posts__card card-post">
-                  <a href="#" class="card-post__link">
-                    <h3 class="card-post__title">
+                <li class="posts__item post">
+                  <a href="#" class="post__link">
+                    <h3 class="post__title">
                       Creating pixel perfect icons in Figma
                     </h3>
-                    <div class="card-post__info">
-                      <div class="card-post__data">12 Feb 2020</div>
-                      <div class="card-post__tags">Figma, Icon Design</div>
+                    <div class="post__info">
+                      <div class="post__data">12 Feb 2020</div>
+                      <div class="post__tags">Figma, Icon Design</div>
                     </div>
-                    <div class="card-post__description">
+                    <div class="post__description">
                       <p>
                         Amet minim mollit non deserunt ullamco est sit aliqua
                         dolor do amet sint. Velit officia consequat duis enim
@@ -123,13 +122,12 @@
               Featured works
             </div>
 
-            <div class="works">
-              <article class="works__item work">
-                <a href="#" class="work__image-container">
+            <div class="featured-works__items works">
+              <article class="featured-works__item works__item work">
+                <a href="#" class="work__image">
                   <img
                     src="./assets/img/works/01.png"
                     alt="Featured work preview"
-                    class="work__image"
                   />
                 </a>
                 <div class="work__content">
@@ -148,12 +146,11 @@
                   </div>
                 </div>
               </article>
-              <article class="works__item work">
-                <a href="#" class="work__image-container">
+              <article class="featured-works__item works__item work">
+                <a href="#" class="work__image">
                   <img
                     src="./assets/img/works/02.png"
                     alt="Featured work preview"
-                    class="work__image"
                   />
                 </a>
                 <div class="work__content">
@@ -172,12 +169,11 @@
                   </div>
                 </div>
               </article>
-              <article class="works__item work">
-                <a href="#" class="work__image-container">
+              <article class="featured-works__item works__item work">
+                <a href="#" class="work__image">
                   <img
                     src="./assets/img/works/03.png"
                     alt="Featured work preview"
-                    class="work__image"
                   />
                 </a>
                 <div class="work__content">
@@ -201,7 +197,26 @@
         </section>
       </main>
       <footer class="footer">
-        <div class="container"><h2>FOOTER</h2></div>
+        <div class="footer__container container">
+          <div class="footer__socials socials">
+            <a href="#" class="socials__link">
+              <i class="icon-facebook"></i>              
+            </a>
+            <a href="#" class="socials__link">
+              <i class="icon-instagram"></i>            
+            </a>
+            <a href="#" class="socials__link">
+              <i class="icon-twitter"></i>              
+            </a>
+            <a href="#" class="socials__link">          
+              <i class="icon-linkedin"></i>
+            </a>
+          </div>
+
+          <div class="footer__copyright">
+            Copyright ©2020 All rights reserved
+          </div>
+        </div>
       </footer>
     </div>
     <script src="./assets/js/main.js"></script>

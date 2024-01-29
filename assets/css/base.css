@@ -1,4 +1,43 @@
-/*=============== BASE ===============*/
+*,
+*::before,
+*::after {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol, 
+li {
+  list-style: none;
+}
+
+textarea,
+button,
+input {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+button {
+  cursor: pointer;
+  background-color: inherit;
+}
+
 html,
 body {
   height: 100%;
@@ -10,6 +49,19 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size); 
   font-weight: var(--font-regular);
+}
+
+.wrapper {
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  flex: 1 1 auto;
+  overflow: hidden;
+  margin-top: var(--header-height);
 }
 
 @media screen and (max-width: 991.98px) {

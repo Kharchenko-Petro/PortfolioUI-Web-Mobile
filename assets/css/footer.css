@@ -1,0 +1,22 @@
+.footer {
+  padding-block: 51px 54px;
+}
+.footer__container {
+}
+.footer__socials:not(:last-child) {
+  margin-bottom: 26px;
+}
+.socials {
+  text-align: center;
+}
+.socials__link i {
+  vertical-align: bottom;
+  font-size: 30px;
+}
+.socials__link:not(:last-child) {
+  margin-right: 35px;
+}
+.footer__copyright {
+  font-size: 14px;
+  text-align: center;
+}

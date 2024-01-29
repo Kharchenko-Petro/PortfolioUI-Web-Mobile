@@ -1,0 +1,20 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url(https://fonts.googleapis.com/css?family=Heebo:regular,500,700,900&display=swap);
+/*=============== ICONS FONT ===============*/
+@import url(./icons-font.css);
+/*=============== BASE ===============*/
+@import url(./base.css);
+/*=============== VARIABLES CSS ===============*/
+@import url(./variables.css);
+/*=============== REUSABLE CSS CLASSES ===============*/
+@import url(./reusable-classes-m375px.css);
+@import url(./reusable-classes-m992px.css);
+/*=============== HEADER ===============*/
+@import url(./header.css);
+/*=============== FOOTER ===============*/
+@import url(./footer.css);
+/*=============== MAIN ===============*/
+@import url(./home-m375px.css);
+@import url(./home-m992px.css);
+/*=============== BLOG ===============*/
+@import url(./blog-m375px.css);

@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, max-scale=1.0, min-scale=1.0"
     />
-    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
     <title>Portfolio UI & Mobile</title>
   </head>
   <body>
@@ -20,17 +20,17 @@
           <div class="nav__menu">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="./index.html" class="nav__link">Home</a>
-              </li>
-
-              <li class="nav__item">
-                <a href="./work.html" class="nav__link">Works</a>
+                <a href="./index.html" class="nav__link active">Home</a>
               </li>
 
               <li class="nav__item">
                 <a href="./blog.html" class="nav__link">Blog</a>
               </li>
-
+              
+              <li class="nav__item">
+                <a href="./work.html" class="nav__link">Works</a>
+              </li>
+              
               <li class="nav__item">
                 <a href="#" class="nav__link">Contact</a>
               </li>
@@ -39,7 +39,7 @@
         </nav>
       </header>
 
-      <main class="main">
+      <main class="page home">
         <section class="hero">
           <div class="hero__container container">
             <div class="hero__profile-picture">
@@ -71,9 +71,9 @@
             </div>
 
             <div class="recent-posts__body">
-              <ul class="recent-posts__items posts">
-                <li class="posts__item post">
-                  <a href="#" class="post__link">
+              <ul class="recent-posts__items">
+                <li class="recent-posts__item post">
+                  <a href="#" class="recent-posts__link">
                     <h3 class="post__title">
                       Making a design system from scratch
                     </h3>
@@ -92,8 +92,8 @@
                   </a>
                 </li>
 
-                <li class="posts__item post">
-                  <a href="#" class="post__link">
+                <li class="recent-posts__item post">
+                  <a href="#" class="recent-posts__link">
                     <h3 class="post__title">
                       Creating pixel perfect icons in Figma
                     </h3>
@@ -196,6 +196,7 @@
           </div>
         </section>
       </main>
+
       <footer class="footer">
         <div class="footer__container container">
           <div class="footer__socials socials">

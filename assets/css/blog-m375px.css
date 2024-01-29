@@ -1,0 +1,32 @@
+.blog {
+  padding-top: 16px;
+}
+.blog__container {
+  padding-inline: 18px;
+}
+.blog__title:not(:last-child) {
+  margin-bottom: 18px;
+}
+.blog__posts > *:last-child {
+  margin-bottom: 0;
+}
+.posts {
+}
+.blog__post {
+}
+.post {
+}
+.post__link {
+}
+.post__title {
+}
+.post__info {
+}
+.post__data {
+}
+.post__tags {
+}
+.post__tags__color-light {
+}
+.post__description {
+}

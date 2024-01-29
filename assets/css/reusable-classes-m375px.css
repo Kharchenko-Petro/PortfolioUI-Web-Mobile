@@ -1,0 +1,112 @@
+/*=============== REUSABLE CSS CLASSES ===============*/
+
+.container {
+  padding-inline: 10px;
+}
+
+.title {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-bold);
+  line-height: 1.36;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  border-radius: 2px;
+  color: var(--white-color);
+  font-size: var(--bigger-font-size);
+  font-weight: var(--font-medium);
+  padding: 9px 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+.section-small-title {
+  font-size: 18px;
+  text-align: center;
+}
+
+/*=============== POST ===============*/
+.post {
+  transition: background-color 0.4s;
+}
+.post > *:last-child {
+  margin-bottom: 0;
+}
+.post__title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-bold);
+  line-height: 1.36;
+  margin-bottom: 12px;
+}
+.post__info {
+  display: flex;
+  margin-bottom: 19px;
+}
+.post__data:not(:last-child) {
+  margin-right: 24px;
+}
+.post__tags:not(:first-child) {
+  border-left: solid 1px var(--black-color);
+  padding-left: 24px;
+}
+.post__description {
+}
+/*====================================*/
+
+/*=============== WORK ===============*/
+.works__item {
+}
+.work {
+  border-bottom: 1px solid var(--grey-color);
+  padding-bottom: 16px;
+}
+.work__image {
+  display: block;
+  border-radius: 6px;
+  min-height: 230px;
+  overflow: hidden;
+  padding-top: 75%;
+
+  position: relative;
+}
+.work__image img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.work__image:not(:last-child) {
+  margin-bottom: 16px;
+}
+.work__content > *:last-child {
+  margin-bottom: 0;
+}
+.work__title {
+  display: inline-block;
+  font-size: var(--h2-font-size);
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+.work__info {
+  display: flex;
+  gap: 22px;
+  margin-bottom: 24px;
+}
+.work__year {
+  background-color: var(--darker-color);
+  border-radius: 16px;
+  color: var(--white-color);
+  font-weight: 900;
+  padding: 2px 12px;
+}
+.work__category {
+  color: var(--light-color);
+}
+.work__description {
+}
+/*====================================*/

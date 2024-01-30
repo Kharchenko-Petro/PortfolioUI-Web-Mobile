@@ -7,14 +7,12 @@
 /*=============== VARIABLES CSS ===============*/
 @import url(./variables.css);
 /*=============== REUSABLE CSS CLASSES ===============*/
-@import url(./reusable-classes-m375px.css);
-@import url(./reusable-classes-m992px.css);
+@import url(./r-classes.css);
 /*=============== HEADER ===============*/
 @import url(./header.css);
 /*=============== FOOTER ===============*/
 @import url(./footer.css);
 /*=============== MAIN ===============*/
-@import url(./home-m375px.css);
-@import url(./home-m992px.css);
+@import url(./home.css);
 /*=============== BLOG ===============*/
-@import url(./blog-m375px.css);
+@import url(./blog.css);

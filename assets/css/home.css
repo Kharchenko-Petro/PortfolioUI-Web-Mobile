@@ -23,6 +23,7 @@
 }
 .hero__title {
   font-size: 32px;
+  line-height: 1.25;
 }
 .hero__title:not(:last-child) {
   margin-bottom: 21px;
@@ -33,6 +34,7 @@
 .hero__button {
   margin: 0 0 25px 0;
 }
+
 @media screen and (min-width: 992px) {
   .hero {
     padding-block: 128px 71px;
@@ -63,6 +65,7 @@
     margin-bottom: 30px;
   }
 }
+
 /*=============== RECENT-POSTS ===============*/
 .recent-posts {
   background-color: var(--container-color);
@@ -79,7 +82,8 @@
 }
 .recent-posts__body {
 }
-.recent-posts__items {
+.recent-posts__items > *:last-child {
+  margin-bottom: 0;
 }
 .recent-posts__item {
   background-color: var(--white-color);
@@ -118,12 +122,15 @@
     justify-content: space-between;
   }
   .recent-posts__item {
+    flex: 0 0 48.7%;
     padding: 24px 23px 28px;
+    margin: 0;
   }
   .recent-posts__item:hover {
     background-color: var(--grey-color);
   }
 }
+
 /*=============== WORKS ===============*/
 .featured-works {
   padding-block: 20px 150px;
@@ -148,9 +155,15 @@
     padding-block: 28px 86px;
   }
   .featured-works__container {
-    padding: 0 15px;
+    padding-inline: 15px;
   }
   .featured-works__title {
     margin-bottom: 34px;
+  }
+  .featured-works__items {
+    display: block;
+  }
+  .featured-works__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }

@@ -1,5 +1,4 @@
 /*=============== REUSABLE CSS CLASSES ===============*/
-
 .container {
   padding-inline: 10px;
 }
@@ -24,6 +23,31 @@
 .section-small-title {
   font-size: 18px;
   text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 888px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  .title {
+    
+  }
+
+  .section-small-title {
+    font-size: 22px;
+    text-align: start;
+  }
+
+  .btn {
+    transition: background-color .4s;
+  }
+
+  .btn:hover {
+    background-color: var(--dark-color);
+  }
 }
 
 /*=============== POST ===============*/
@@ -52,11 +76,27 @@
 }
 .post__description {
 }
+
+@media screen and (min-width: 992px) {
+  .post {
+  }
+  .post__title {
+    margin-bottom: 26px;
+  }
+  .post__info {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  .post__data:not(:last-child) {
+    margin-right: 30px;
+  }
+  .post__tags:not(:first-child) {
+    padding-left: 27px;
+  }
+}
 /*====================================*/
 
 /*=============== WORK ===============*/
-.works__item {
-}
 .work {
   border-bottom: 1px solid var(--grey-color);
   padding-bottom: 16px;
@@ -108,5 +148,40 @@
   color: var(--light-color);
 }
 .work__description {
+}
+
+@media screen and (min-width: 992px) {
+  .work {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding-bottom: 32px;
+  }
+  .work__image {
+    flex: 0 0 28.672%; 
+    min-height: 180px; 
+    padding-top: 0;
+  }
+  .work__image:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .work__image img {
+  }
+  .work__content {
+    flex: 1 1 auto;
+  }
+  .work__title {
+  }
+  .work__info {
+    gap: 26px;
+  }
+  .work__year {
+    font-size: 18px;
+  }
+  .work__category {
+    font-size: 20px;
+  }
+  .work__description {
+  }
 }
 /*====================================*/

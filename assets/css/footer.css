@@ -12,6 +12,10 @@
 .socials__link i {
   vertical-align: bottom;
   font-size: 30px;
+  transition: color .4s;
+}
+.socials__link i:hover {
+  color: var(--primary-color);
 }
 .socials__link:not(:last-child) {
   margin-right: 35px;

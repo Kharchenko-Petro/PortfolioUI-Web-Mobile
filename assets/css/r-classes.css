@@ -23,7 +23,7 @@
   text-align: center;
   display: inline-block;
 }
-.secondary-title {
+.section-small-title {
   font-size: 18px;
   text-align: center;
 }
@@ -110,7 +110,7 @@
 .work__title {
   display: inline-block;
   font-size: var(--h2-font-size);
-  font-weight: 700;
+  font-weight: var(--font-bold);
   line-height: 1.25;
   margin-bottom: 16px;
 }
@@ -123,8 +123,9 @@
   background-color: var(--darker-color);
   border-radius: 16px;
   color: var(--white-color);
+  height: 25px;
   font-weight: 900;
-  padding: 2px 12px;
+  padding: 0 12px;
 }
 .work__category {
   color: var(--light-color);

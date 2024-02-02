@@ -9,7 +9,10 @@
   padding-block: 20px 38px;
 }
 .home__featured-works {
-  padding-block: 20px 150px;
+  padding-block: 20px 38px;
+}
+.home__featured-works:last-child {
+  margin-bottom: 112px;
 }
 
 @media screen and (min-width: 992px) {
@@ -23,7 +26,10 @@
     padding-block: 20px 32px;
   }
   .home__featured-works {
-    padding-block: 28px 86px;
+    padding-block: 28px 40px;
+  }
+  .home__featured-works:last-child {
+    margin-bottom: 43px;
   }
 }
 
@@ -31,7 +37,6 @@
 .hero {
 }
 .hero__container {
-  padding-inline: 24px;
 }
 .hero__profile-picture {
   display: inline-block;
@@ -62,7 +67,6 @@
     display: flex;
     column-gap: 115px;
     align-items: flex-start;
-    padding-inline: 18px;
   }
   .hero__profile-picture {
     box-shadow: -5px 13px 0px 0px var(--container-color);

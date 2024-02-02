@@ -1,11 +1,14 @@
+.recent-posts__item > *:last-child {
+  margin-bottom: 0;
+}
+.post-tags_color-light {
+  color: var(--light-color);
+}
 .blog {
   padding-block: 16px 57px;
 }
 .blog__container {
   padding-inline: 18px;
-}
-.blog__title {
-  line-height: 2;
 }
 .blog__title:not(:last-child) {
   margin-bottom: 18px;
@@ -46,10 +49,6 @@
   }
   .blog__container {
     max-width: 718px;
-
-  }
-  .blog__title {
-    line-height: 1.36;
   }
   .blog__title:not(:last-child) {
     margin-bottom: 55px;

@@ -2,10 +2,10 @@
 @import url(https://fonts.googleapis.com/css?family=Heebo:regular,500,700,900&display=swap);
 /*=============== ICONS FONT ===============*/
 @import url(./icons-font.css);
-/*=============== BASE ===============*/
-@import url(./base.css);
 /*=============== VARIABLES CSS ===============*/
 @import url(./variables.css);
+/*=============== BASE ===============*/
+@import url(./base.css);
 /*=============== REUSABLE CSS CLASSES ===============*/
 @import url(./r-classes.css);
 /*=============== HEADER ===============*/
@@ -16,3 +16,5 @@
 @import url(./home.css);
 /*=============== BLOG ===============*/
 @import url(./blog.css);
+/*=============== WORK ===============*/
+@import url(./work.css);

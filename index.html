@@ -26,11 +26,11 @@
               <li class="nav__item">
                 <a href="./blog.html" class="nav__link">Blog</a>
               </li>
-              
+
               <li class="nav__item">
                 <a href="./work.html" class="nav__link">Works</a>
               </li>
-              
+
               <li class="nav__item">
                 <a href="#" class="nav__link">Contact</a>
               </li>
@@ -40,89 +40,95 @@
       </header>
 
       <main class="page home">
-        <section class="hero">
+        <section class="home__hero hero">
           <div class="hero__container container">
-            <div class="hero__profile-picture">
+            <div class="hero__profile-picture profile-picture">
               <img
-                src="./assets/img/home/main/hero/profile-picture.png"
+                src="./assets/img/profile-picture/profile-picture.jpg"
                 alt="Profile picture"
               />
             </div>
 
             <div class="hero__body">
-              <h1 class="hero__title title">
+              <h1 class="hero__title">
                 Hi, I am John,<br />Creative Technologist
               </h1>
-              <div class="hero__text text">
+              <div class="hero__text">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint. Velit officia consequat duis enim velit mollit.
                 Exercitation veniam consequat sunt nostrud amet.
               </div>
-              <a href="" class="hero__button btn"> Download Resume </a>
+              <a href="#" class="hero__button button"> Download Resume </a>
             </div>
           </div>
         </section>
 
-        <section class="recent-posts">
+        <section class="home__recent-posts recent-posts">
           <div class="recent-posts__container container">
             <div class="recent-posts__header">
-              <div class="recent-posts__title section-small-title">Recent posts</div>
+              <div class="recent-posts__title secondary-title">
+                Recent posts
+              </div>
               <a href="#" class="recent-posts__view-all">View all</a>
             </div>
 
-            <div class="recent-posts__body">
-              <ul class="recent-posts__items">
-                <li class="recent-posts__item post">
-                  <a href="#" class="recent-posts__link">
-                    <h3 class="post__title">
-                      Making a design system from scratch
-                    </h3>
-                    <div class="post__info">
-                      <div class="post__data">12 Feb 2020</div>
-                      <div class="post__tags">Design, Pattern</div>
+            <div class="recent-posts__items">
+              <article class="recent-posts__item recent-post">
+                <a href="#" class="recent-post__link">
+                  <h3 class="recent-post__title post-title">
+                    Making a design system from scratch
+                  </h3>
+                  <div class="recent-post__info post-info">
+                    <div class="recent-post__date">12 Feb 2020</div>
+                    <div class="recent-post__separator post-separator"></div>
+                    <div class="recent-post__tags">
+                      Design, Pattern
                     </div>
-                    <div class="post__description">
-                      <p>
-                        Amet minim mollit non deserunt ullamco est sit aliqua
-                        dolor do amet sint. Velit officia consequat duis enim
-                        velit mollit. Exercitation veniam consequat sunt nostrud
-                        amet.
-                      </p>
-                    </div>
-                  </a>
-                </li>
+                  </div>
+                  <div class="recent-post__description">
+                    <p>
+                      Amet minim mollit non deserunt ullamco est sit aliqua
+                      dolor do amet sint. Velit officia consequat duis enim
+                      velit mollit. Exercitation veniam consequat sunt nostrud
+                      amet.
+                    </p>
+                  </div>
+                </a>
+              </article>
 
-                <li class="recent-posts__item post">
-                  <a href="#" class="recent-posts__link">
-                    <h3 class="post__title">
-                      Creating pixel perfect icons in Figma
-                    </h3>
-                    <div class="post__info">
-                      <div class="post__data">12 Feb 2020</div>
-                      <div class="post__tags">Figma, Icon Design</div>
+              <article class="recent-posts__item recent-post">
+                <a href="#" class="recent-post__link">
+                  <h3 class="recent-post__title post-title">
+                    Creating pixel perfect icons in Figma
+                  </h3>
+                  <div class="recent-post__info post-info">
+                    <div class="recent-post__date">12 Feb 2020</div>
+                    <div class="recent-post__separator post-separator"></div>
+                    <div class="recent-post__tags">
+                      Figma, Icon Design
                     </div>
-                    <div class="post__description">
-                      <p>
-                        Amet minim mollit non deserunt ullamco est sit aliqua
-                        dolor do amet sint. Velit officia consequat duis enim
-                        velit mollit. Exercitation veniam consequat sunt nostrud
-                        amet.
-                      </p>
-                    </div>
-                  </a>
-                </li>
-              </ul>
+                  </div>
+                  <div class="recent-post__description">
+                    <p>
+                      Amet minim mollit non deserunt ullamco est sit aliqua
+                      dolor do amet sint. Velit officia consequat duis enim
+                      velit mollit. Exercitation veniam consequat sunt nostrud
+                      amet.
+                    </p>
+                  </div>
+                </a>
+              </article>
             </div>
           </div>
         </section>
 
-        <section class="featured-works">
+        <section class="home__featured-works featured-works">
           <div class="featured-works__container container">
-            <div class="featured-works__title section-small-title">
+            <div class="featured-works__title secondary-title">
               Featured works
             </div>
 
-            <div class="featured-works__items works">
+            <div class="featured-works__items">
               <article class="featured-works__item work">
                 <a href="#" class="work__image">
                   <img
@@ -131,7 +137,7 @@
                   />
                 </a>
                 <div class="work__content">
-                  <h2 class="work__title">Designing Dashboards</h2>
+                  <a href="#" class="work__title">Designing Dashboards</a>
                   <div class="work__info">
                     <div class="work__year">2020</div>
                     <div class="work__category">Dashboard</div>
@@ -146,7 +152,8 @@
                   </div>
                 </div>
               </article>
-              <article class="featured-works__item works__item work">
+
+              <article class="featured-works__item work">
                 <a href="#" class="work__image">
                   <img
                     src="./assets/img/works/02.png"
@@ -154,7 +161,7 @@
                   />
                 </a>
                 <div class="work__content">
-                  <h2 class="work__title">Vibrant Portraits of 2020</h2>
+                  <a href="#" class="work__title">Vibrant Portraits of 2020</a>
                   <div class="work__info">
                     <div class="work__year">2018</div>
                     <div class="work__category">Illustration</div>
@@ -169,7 +176,8 @@
                   </div>
                 </div>
               </article>
-              <article class="featured-works__item works__item work">
+
+              <article class="featured-works__item work">
                 <a href="#" class="work__image">
                   <img
                     src="./assets/img/works/03.png"
@@ -177,7 +185,7 @@
                   />
                 </a>
                 <div class="work__content">
-                  <h2 class="work__title">36 Days of Malayalam type</h2>
+                  <a href="#" class="work__title">36 Days of Malayalam type</a>
                   <div class="work__info">
                     <div class="work__year">2018</div>
                     <div class="work__category">Typography</div>
@@ -201,15 +209,15 @@
         <div class="footer__container container">
           <div class="footer__socials socials">
             <a href="#" class="socials__link">
-              <i class="icon-facebook"></i>              
+              <i class="icon-facebook"></i>
             </a>
             <a href="#" class="socials__link">
-              <i class="icon-instagram"></i>            
+              <i class="icon-instagram"></i>
             </a>
             <a href="#" class="socials__link">
-              <i class="icon-twitter"></i>              
+              <i class="icon-twitter"></i>
             </a>
-            <a href="#" class="socials__link">          
+            <a href="#" class="socials__link">
               <i class="icon-linkedin"></i>
             </a>
           </div>

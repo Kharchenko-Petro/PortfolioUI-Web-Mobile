@@ -1,19 +1,41 @@
+/*=============== HOME ===============*/
+.home {
+}
+.home__hero {
+  padding-block: 83px 58px;
+  text-align: center;
+}
+.home__recent-posts {
+  padding-block: 20px 38px;
+}
+.home__featured-works {
+  padding-block: 20px 150px;
+}
+
+@media screen and (min-width: 992px) {
+  .home {
+  }
+  .home__hero {
+    padding-block: 210px 71px;
+    text-align: initial;
+  }
+  .home__recent-posts {
+    padding-block: 20px 32px;
+  }
+  .home__featured-works {
+    padding-block: 28px 86px;
+  }
+}
 
 /*=============== HERO ===============*/
 .hero {
-  padding-block: 30px 58px;
 }
 .hero__container {
   padding-inline: 24px;
-  text-align: center;
 }
 .hero__profile-picture {
   display: inline-block;
-  border-radius: 50%;
   box-shadow: -3px 9px 0px 0px var(--container-color);
-  height: 171px;
-  overflow: hidden;
-  width: 171px;
 }
 .hero__profile-picture:not(:last-child) {
   margin-bottom: 43px;
@@ -23,33 +45,27 @@
 }
 .hero__title {
   font-size: 32px;
+  font-weight: var(--font-bold);
   line-height: 1.25;
 }
 .hero__title:not(:last-child) {
   margin-bottom: 21px;
 }
 .hero__text:not(:last-child) {
-  margin-bottom: 21px;
+  margin-bottom: 27px;
 }
 .hero__button {
-  margin: 0 0 25px 0;
 }
 
 @media screen and (min-width: 992px) {
-  .hero {
-    padding-block: 128px 71px;
-  }
   .hero__container {
-    text-align: initial;
-
     display: flex;
     column-gap: 115px;
     align-items: flex-start;
+    padding-inline: 18px;
   }
   .hero__profile-picture {
     box-shadow: -5px 13px 0px 0px var(--container-color);
-    height: 100%;
-    flex: 0 0 243px;
     order: 1;
   }
   .hero__body {
@@ -58,7 +74,6 @@
   }
   .hero__title {
     font-size: 44px;
-    line-height: 1.36;
     margin-bottom: 28px;
   }
   .hero__text {
@@ -68,10 +83,10 @@
 
 /*=============== RECENT-POSTS ===============*/
 .recent-posts {
-  background-color: var(--container-color);
-  padding-block: 20px 38px;
+  background-color: var(--container-color);  
 }
 .recent-posts__container {
+  padding-inline: 10px;
 }
 .recent-posts__header {
   margin-bottom: 16px;
@@ -80,32 +95,21 @@
   display: none;
   white-space: nowrap;
 }
-.recent-posts__body {
+.recent-posts__item:not(:last-child) {
+  margin-bottom: 17px;
 }
-.recent-posts__items > *:last-child {
-  margin-bottom: 0;
-}
-.recent-posts__item {
-  background-color: var(--white-color);
-  border-radius: 4px;
-  box-shadow: 0px 4px 10px 0px rgba(187, 225, 250, 0.25);
-  margin: 0 0 17px 0;
-  padding: 12px 20px 22px;
-}
-.recent-posts__link > *:last-child {
-  margin-bottom: 0;
-}
-
 @media screen and (min-width: 992px) {
-  .recent-posts {
-    padding-block: 20px 32px;
+  .recent-posts { 
+  }
+  .recent-posts__container {
+    padding-inline: 18px;
   }
   .recent-posts__header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
   }
-  .recent-posts__title {
+  .recent-posts__title:not(:last-child) {
     padding-right: 20px;
   }
   .recent-posts__view-all {
@@ -121,22 +125,50 @@
     gap: 20px;
     justify-content: space-between;
   }
-  .recent-posts__item {
-    flex: 0 0 48.7%;
-    padding: 24px 23px 28px;
-    margin: 0;
+  .recent-posts__item:not(:last-child) {
+    margin-bottom: 0;
   }
-  .recent-posts__item:hover {
+}
+/*========== RECENT-POST ==========*/
+.recent-post {
+  background-color: var(--white-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 10px 0px rgba(187, 225, 250, 0.25);
+  padding: 12px 20px 22px;
+  transition: background-color 0.4s;
+}
+.recent-post__link > *:last-child {
+  margin-bottom: 0;
+}
+.recent-post__info {
+  margin-bottom: 19px;
+}
+.recent-post__separator {
+  margin-inline: 24px;
+}
+@media screen and (min-width: 992px) {
+  .recent-post {
+    flex: 0 0 48.7%;
+    padding: 25px;
+  }
+  .recent-post:hover {
     background-color: var(--grey-color);
+  }
+  .recent-post__title {
+    margin-bottom: 26px;
+  }
+  .recent-post__info {
+    margin-bottom: 16px;
+  }
+  .recent-post__separator {
+    margin-inline: 30px 27px;
   }
 }
 
 /*=============== WORKS ===============*/
 .featured-works {
-  padding-block: 20px 150px;
 }
 .featured-works__container {
-  padding-inline: 18px;
 }
 .featured-works__title {
   margin-bottom: 16px;
@@ -151,11 +183,9 @@
 }
 
 @media screen and (min-width: 992px) {
-  .featured-works {
-    padding-block: 28px 86px;
+  .featured-works { 
   }
   .featured-works__container {
-    padding-inline: 15px;
   }
   .featured-works__title {
     margin-bottom: 34px;

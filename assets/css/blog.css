@@ -1,51 +1,20 @@
-.recent-posts__item > *:last-child {
-  margin-bottom: 0;
-}
-.post-tags_color-light {
-  color: var(--light-color);
-}
+/*=============== BLOG ===============*/
 .blog {
-  padding-block: 16px 57px;
+  padding-block: 74px 57px;
 }
 .blog__container {
-  padding-inline: 18px;
 }
 .blog__title:not(:last-child) {
   margin-bottom: 18px;
 }
-.blog__items > *:last-child {
-  margin-bottom: 0;
-}
 .blog__item {
-  border-bottom: solid 1px var(--grey-color);
-  padding-bottom: 24px;
-  margin-bottom: 18px;
 }
-.blog__item-title {
-  margin-bottom: 5px;
+.blog__item:not(:last-child) {
+  margin-bottom: 18px;;
 }
-.blog__item-title_font-size {
-  font-size: 26px;
-}
-.blog__item-title_font-weight {
-  font-weight: var(--font-medium);
-}
-.blog__item-title_line-height {
-  line-height: normal;
-}
-.blog__item-info {
-  margin-bottom: 17px;
-}
-.blog__item-data:not(:last-child) {
-  margin-right: 14px;
-}
-.blog__item-tags:not(:first-child) {
-  padding-left: 15px;
-}
-
 @media screen and (min-width: 992px) {
   .blog {
-    padding-block: 78px 53px;
+    padding-block: 160px 53px;
   }
   .blog__container {
     max-width: 718px;
@@ -55,34 +24,59 @@
   }
   .blog__items {
   }
-  .blog__item {
-    padding-bottom: 29px;
+  .blog__item:not:(:last-child) {
     margin-bottom: 32px;
   }
-  .blog__item-title {
+}
+/*========= BLOG-POST =========*/
+.blog-post {
+  border-bottom: solid 1px var(--grey-color);
+  padding-bottom: 24px;
+}
+.blog-post > *:last-child {
+  margin-bottom: 0;
+}
+.blog-post__title {
+  font-size: 26px;
+  font-weight: var(--font-medium);
+  margin-bottom: 5px;
+}
+.blog-post__info {
+  margin-bottom: 17px;
+}
+.blog-post__data {
+}
+.blog-post__separator {
+  height: 12px;
+  margin-inline: 14px 15px;
+}
+.blog-post__tags {
+}
+.blog-post__description{
+}
+
+@media screen and (min-width: 992px) {
+  .blog-post {
+    padding-bottom: 29px;
+  }
+  .blog-post__title {
+    font-size: 30px;
     margin-bottom: 16px;
     transition: color .4s;
   }
-  .blog__item-title:hover {
+  .blog-post__title:hover {
     color: var(--primary-color);
   }
-  .blog__item-title_font-size {
-    font-size: 30px;
-  }
-  .blog__item-title_line-height {
-  }
-  .blog__item-info {
+  .blog-post__info {
     font-size: 20px;
     margin-bottom: 15px;
   }
-  .blog__item-data {
+  .blog-post__data {
   }
-  .blog__item-tags {
+  .blog-post__separator {
+    height: 21px;
+    margin-inline: 25px 20px;
   }
-  .blog__item-data:not(:last-child) {
-    margin-right: 25px;
-  }
-  .blog__item-tags:not(:first-child) {
-    padding-left: 20px;
+  .blog-post__tags {
   }
 }

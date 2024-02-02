@@ -44,7 +44,7 @@
 .nav__icon {
   position: absolute;
   top: 20px;
-  right: 24px;
+  right: 18px;
   z-index: var(--z-tooltip);
 }
 .icon-nav {

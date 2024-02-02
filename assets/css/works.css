@@ -1,5 +1,5 @@
 .works {
-  padding-top: 16px;
+  padding-top: 74px;
 }
 .works__container {
   padding-inline: 18px;
@@ -18,7 +18,7 @@
 
 @media screen and (min-width: 992px) {
   .works {
-    padding-block: 78px 58px;
+    padding-block: 160px 58px;
   }
   .works__container {
     padding-inline: 18px;

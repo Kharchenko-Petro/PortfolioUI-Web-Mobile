@@ -30,7 +30,7 @@
 
 @media screen and (min-width: 992px) {
   .container {
-    max-width: 891px;
+    max-width: 718px;
     padding-inline: 18px;
     margin: 0 auto;
   }
@@ -53,25 +53,22 @@
 }
 
 /*=============== POST ===============*/
-.post-title {
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-bold);
-  line-height: 1.5;
-}
 .post-info {
   display: flex;
+  align-items: center;
 }
 .post-separator {
   background-color: var(--black-color);
+  height: 21px;
   width: 1px;
 }
 .post-separator:last-child {
   display: none;
 }
+.post-tags_color-light {
+  color: var(--light-color);
+}
 @media screen and (min-width: 992px) {
-  .post-title {
-    line-height: normal; 
-  }
   .post-info {
     font-size: 18px;
   }
